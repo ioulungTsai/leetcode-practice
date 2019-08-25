@@ -1,5 +1,5 @@
-@param {number} x
-@return {number}
+// @param {number} x
+// @return {number}
  
 var reverse = function(x) {
     let stringX = "" + x;
