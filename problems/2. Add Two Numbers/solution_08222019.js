@@ -3,23 +3,20 @@
 //     this.val = val;
 //     this.next = null;
 // }
- 
 
 // @param {ListNode} l1
 // @param {ListNode} l2
 // @return {ListNode}
- 
 
 function addTwoNumbers(l1, l2) {
     const output = new ListNode();
     let current;
     let carrier = 0;
-    
     while(l1 || l2 || carrier) {
         let value1;
         let value2;
         if(l1 === null) {
-            value1 = 0;   
+            value1 = 0;
         } else {
             value1 = l1.val;
         }
@@ -43,11 +40,10 @@ function addTwoNumbers(l1, l2) {
                 current = current.next;
             }
             current.next = node;
-        } 
+        }
         l1 = l1 && l1.next;
         l2 = l2 && l2.next;
     }
-    
     return output;
 }
 
